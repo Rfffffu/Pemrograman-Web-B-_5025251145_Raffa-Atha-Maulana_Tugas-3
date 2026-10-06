@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand"> <img src="./img/toga.png" class="toga">
+      <span>Student Management</span>
+    </a>
+    <nav class="nav-links">
+      <a>Home</a>
+      <a>Students</a>
+      <a>About</a>
+      <a class="avatar" aria-label="Profil"></a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Form -->
+    <section class="card form-card">
+      <h2>Form Student</h2>
+      <form>
+        <div class="field">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" placeholder="Masukkan NIM">
+        </div>
+        <div class="field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+        </div>
+        <div class="field">
+          <label for="jurusan">Jurusan</label>
+          <select id="jurusan">
+            <option value="">Pilih Jurusan</option>
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+            <option>Teknik Komputer</option>
+            <option>Manajemen</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Masukkan email">
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary"><img src="./img/save.png" class="edit-btn"> Edit</button>
+          <button type="button" class="btn btn-gray">X Batal</button>
+          <button type="reset" class="btn btn-danger"><img src="./img/reset.png"> Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card table-card">
+      <div class="table-head">
+        <h2>Data Mahasiswa</h2>
+        <div class="search">
+          <input type="search" placeholder="Cari mahasiswa..." aria-label="Cari mahasiswa">
+          <button type="button" aria-label="Cari"><img src="./img/search.png" class="search-icon"></button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>No</th><th>NIM</th><th>Nama</th><th>Jurusan</th><th>Email</th><th>Aksi</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>231001</td><td>Andi Pratama</td><td>Informatika</td><td>andi@mail.com</td>
+              <td class="aksi">
+                <button class="icon-btn edit" aria-label="Edit"><img src="./img/edit.png"></button>
+                <button class="icon-btn hapus" aria-label="Hapus"><img src="./img/trash.png" class="trash-btn"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td><td>231002</td><td>Siti Aisyah</td><td>Sistem Informasi</td><td>siti@mail.com</td>
+              <td class="aksi">
+                <button class="icon-btn edit" aria-label="Edit"><img src="./img/edit.png"></button>
+                <button class="icon-btn hapus" aria-label="Hapus"><img src="./img/trash.png" class="trash-btn"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td><td>231003</td><td>Budi Santoso</td><td>Teknik Komputer</td><td>budi@mail.com</td>
+              <td class="aksi">
+                <button class="icon-btn edit" aria-label="Edit"><img src="./img/edit.png"></button>
+                <button class="icon-btn hapus" aria-label="Hapus"><img src="./img/trash.png" class="trash-btn"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td><td>231004</td><td>Nina Marlina</td><td>Manajemen</td><td>nina@mail.com</td>
+              <td class="aksi">
+                <button class="icon-btn edit" aria-label="Edit"><img src="./img/edit.png"></button>
+                <button class="icon-btn hapus" aria-label="Hapus"><img src="./img/trash.png" class="trash-btn"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td><td>231005</td><td>Rizky Pratama</td><td>Informatika</td><td>rizky@mail.com</td>
+              <td class="aksi">
+                <button class="icon-btn edit" aria-label="Edit"><img src="./img/edit.png"></button>
+                <button class="icon-btn hapus" aria-label="Hapus"><img src="./img/trash.png" class="trash-btn"></button>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="pagination" aria-label="Halaman">
+        <a href="#">&lt;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&gt;</a>
+        <a href="#">&gt;&gt;</a>
+      </nav>
+    </section>
+
+  </main>
+</body>
+</html>
